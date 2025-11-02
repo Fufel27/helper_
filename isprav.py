@@ -29,5 +29,3 @@ def correct(word):
     candidates = (known(edits0(word)) or known(edits1(word)) or known(edits2(word)) or [word])
     return max(candidates, key=counts.get)
 
-print(list(map(correct, tokens("пиивет каа дел?"))))
-
